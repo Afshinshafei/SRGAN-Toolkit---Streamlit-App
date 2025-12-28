@@ -445,7 +445,7 @@ elif page == "🔄 NC to H5 Conversion":
                     progress_bar = st.progress(0)
                     status_text = st.empty()
                     
-                    with tempfile.NamedTemporaryFile(delete=False, suffix='.h5', delete=False) as tmp_file:
+                    with tempfile.NamedTemporaryFile(delete=False, suffix='.h5') as tmp_file:
                         out_path = tmp_file.name
                     
                     try:
